@@ -1,0 +1,21 @@
+{
+  "name": "my-data-clerk-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lonerun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniBreakfast/my-data-clerk-module.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UniBreakfast/my-data-clerk-module/issues"
+  },
+  "homepage": "https://github.com/UniBreakfast/my-data-clerk-module#readme"
+}
