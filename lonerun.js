@@ -1,7 +1,12 @@
 
-const { read, update } = require('.')
+const { read, update } = require('.'),
 
-update(obj => obj.arr.push(obj.arr.length+1))
 
-result = read(obj => obj.arr)
-console.log(result.toString())
+main = async ()=> {
+  await update(store => store.arr.push(store.arr.length+1))
+
+  let result = await read(store => store.arr)
+  console.log(result.toString())
+}
+
+main()

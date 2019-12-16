@@ -27,5 +27,4 @@ update = queryFn => {
 
 let store = JSON.parse(fs.readFileSync('store.json', 'utf8') || '{}')
 
-// module.exports = {read, update}
-module.exports = require('./store/fsDirectSync')
+module.exports = {read, update}
