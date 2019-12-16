@@ -1,12 +1,9 @@
 
-const { read, update } = require('.'),
+const { addArr, direct } = require('.'),
+      { read, update } = direct,
+      { assign } = Object,
+      c = console.log
 
+assign(global, {c, addArr, direct})
 
-main = async ()=> {
-  await update(store => store.arr.push(store.arr.length+1))
-
-  let result = await read(store => store.arr)
-  console.log(result.toString())
-}
-
-main()
+setTimeout(c, 1e7)
